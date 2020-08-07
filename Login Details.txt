@@ -1,0 +1,14 @@
+FOR USERS (tbluser) : 
+
+- For users (considered as students) having rollno in the format 17xx1234 or 19xx1234, password is qwe.
+- For users (considered as faculty) having rollno as a normal number (123 or 1234), password is 123.
+
+FOR ADMIN (tbladmin) :
+
+- For admin named add, password is add.
+- For admin named ykk, password is ykk.
+
+FOR GUESTS (tblguests) : 
+
+- New registration has to be made for guests which will reflect in the tblguests. 
+- After registration, login has to be made using the mobile number and password setup during registration.
