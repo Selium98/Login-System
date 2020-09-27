@@ -1,0 +1,331 @@
+html, body
+        {
+
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Helvetica Neue" , Helvetica, sans-serif;
+
+        }
+      section
+      {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        min-height: 1000px;
+        background-size:400% 400%;
+        position:fixed ;
+      }
+      .wave
+      {
+        position: fixed;
+
+
+      }
+      .wave:before
+      {
+        content: '';
+        position: fixed;
+        right: 0;
+        left :0px;
+        width: 50%;
+        height: 100%;
+        background:url(wave.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+        
+
+        .logincontent
+        {   background-color:#9a1f40;
+            box-shadow: 10px 10px 10px #aaaaaa;
+            border-top-right-radius:25px;
+            border-bottom-right-radius:25px;
+            position: fixed;
+            width: 31.25vw;
+            height: 62.937062937vh;
+            top: 45%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left:0px;
+            padding-top: 10px;
+            border-style: none;
+            border-width:2px;
+            border-left-color: grey;
+        }
+        .pic-board
+
+      {      background-image: url(student.png);
+             box-shadow: 0px 10px 10px #aaaaaa;
+              border-top-left-radius:25px;
+              border-bottom-left-radius:25px;
+              background-color:#fff;
+              position: fixed;
+              width: 31.25vw;
+              height: 62.937062937vh;
+              top: 45%;
+              right: 50%;
+              margin-top: -150px;
+              margin-left:0px;
+              padding-top: 10px;
+              border-style: none;
+              border-width:2px;
+              border-right-color: grey;
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+
+        }
+        .loginheading
+        {
+            border-bottom: solid 1px black;
+            padding-left: 18px;
+            padding-bottom: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        img {
+
+              margin-left: 15px;
+              margin-right: auto;
+              margin-bottom: 10px;
+              max-width:35%;
+            }
+        label
+        {
+            color: black;
+            display: inline-block;
+            margin-left: 18px;
+            padding-top: 10px;
+            font-size: 15px;
+        }
+        input[type=text], input[type=password], input[type=email]
+        {
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 10px;
+            margin-top: 30px;
+            margin-left: 18px;
+            margin-right: 18px;
+            width: 25rem;
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f5f5;
+            font-size: 14px;
+            border-top-left-radius:25px;
+            border-top-right-radius:25px;
+            border-bottom-left-radius:25px;
+            border-bottom-right-radius:25px;
+        }
+        input[type=password]
+        {
+          margin-top: 50px;
+        }
+        input[type=checkbox]
+        {
+            margin-left: 18px;
+            margin-top: 60px;
+        }
+        .loginremember
+        {
+
+            height: 130px;
+            margin-top: 70px;
+
+
+        }
+        h3
+        {
+          color: #fff;
+        }
+        .check
+        {
+            font-family: sans-serif;
+            position: relative;
+            top: -2px;
+            margin-left: 2px;
+            padding: 0px;
+            font-size: 12px;
+            color: #321;
+        }
+        .loginbtn
+        {
+
+
+            float: right;
+            margin-right:200px;
+            margin-top: 0px;
+            height: 40px;
+            width: 100px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+             background:linear-gradient(-45deg,,#FFF,e7dfd5,black);
+             border-radius: 30px;
+            border: 1px solid grey;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+
+h1
+{
+     font-family: Minion Pro Regular;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-align: center;
+     text-indent: -20px;
+     color: white;
+  }
+  .home {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color:#9a1f40;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    max-width: 20%;
+  }
+  @media screen and (max-width: 1050px){
+    .wave{
+      grid-gap: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1000px)
+  {
+    form{
+      width: 290px;
+    }
+  
+    .logincontent h2{
+          font-size: 2.4rem;
+          margin: 8px 0;
+    }
+  
+   
+    }
+  @media screen and (max-width: 600px){
+    .wave{
+      grid-template-columns: 1fr;
+    }
+  
+    .pic-board{
+      display: none;
+      margin-left: 100px;
+    }
+     .wave:before
+     {
+       display: none;
+     } 
+    .wave:after
+    {
+      
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 45vh;
+      padding-left: 10rem;
+      top: 25rem;
+      background-image: linear-gradient(to top,#900c3f,#9a1f40,#e84a5f);
+      clip-path: circle( 500px at 40% 180% );
+      background-size: cover;
+
+    }
+  
+    .logincontent
+    {
+      justify-content: center;
+      margin-right:6.25rem ;
+      width: 70vw;
+      height: 50vh;
+      left: 0px;
+      top: 0;
+      margin-top: 7rem;
+      margin-left: 3.75rem;
+      border-radius: 1.5625rem;
+      box-shadow: none ;
+      background-color:white;
+    }
+    h1{
+      font-family: Minion Pro Regular;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      text-indent: -20px;
+      color: #900c3f;
+      font-size: 2.4rem
+    }
+    input[type=text], input[type=password]
+    {
+      display: grid;
+      grid-template-columns: 7% 93%;
+      font-size: 14px;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      margin-top: 0.9375rem;
+      margin-left: 0.625rem;
+      margin-right: 1px;
+      width: 60vw;
+      height: 35px;
+      border-bottom: 5px solid #900c3f ;
+      border-radius: 0px;
+      background-color: white;
+      box-shadow: none;
+    }
+    input[type=password]
+    {
+      margin-top: 30px;
+    }
+    input[type=checkbox]
+    {
+        margin-left: 1.125rem;
+        margin-top: 1.25rem;
+    }
+    .loginremember 
+    {
+      height: 130px;
+      margin-top:0;
+    }  
+    .loginbtn 
+    {
+     float: right;
+     margin-right: 52px;
+     margin-top: 0px;
+     height: 40px;
+     width: 45vw;
+     font-size: 14px;
+     font-weight: bold;
+     text-align: center;
+     color: white;
+     background: linear-gradient(to right,#900c3f,#9a1f40);
+     border-radius: 30px;
+     border: 1px solid grey;
+     cursor: pointer;
+     }
+     h3
+     {
+       color:black;
+     }
+     img
+     {
+       max-width: 50%;
+     }
+     .home {
+      float: right;
+      margin-top: 10px;
+      
+      max-width: 100%;
+   }
+  }
+

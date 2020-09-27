@@ -1,0 +1,31 @@
+body {
+	background-color:#7cffcb;
+	background-image:linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}
+
+
+
+.frm{
+	border: 1px solid grey;
+	width: 20%;
+	border-radius: 10px;
+	margin: 200px auto;
+	background-color: white;
+	padding: 50px;
+}
+
+.field{
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.btn {
+	color: #fff;
+	background-color: red;
+	padding: 5px;
+	text-decoration: none;
+	border-style: none;
+	cursor: pointer;
+	
+}
